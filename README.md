@@ -38,8 +38,12 @@ python main.py
 - Add power-ups (pizza power, temporary speed boost, area slap).
 - Add a high-score save file.
 
+
 Have fun! If you'd like, I can:
 - Add graphics or place-holder images,
 - Add sound effects and music hooks,
 - Turn this into a package with assets,
 - Add levels, boss mafia, or animations.
+
+-   
+(Please contribute...)
