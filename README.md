@@ -1,49 +1,35 @@
-# Mamma Mia Pizza Game (Python)
+```markdown
+# Mamma Mia — Improved
 
-You are Mamma Mia — an Italian mom who protects the kitchen! Use your rolling pin to slap the mafia before they reach you.
+This version improves the visuals and behavior so mafia enemies look like distinct people:
+- Faces, hair, beards, hats, and glasses
+- Clothing color variety and small health bars for tougher enemies
+- Walk bobbing and rolling-pin swing animation for Mom
+- Knockback & daze effect on hit, with score pop-ups
+- Powerups (gun, grenade) and explosion visuals retained
 
-This is a small, self-contained game written with pygame. It uses simple shapes so you don't need external assets. Feel free to modify and extend it.
+How to run
+1. Install dependencies:
+   pip install -r requirements.txt
+2. Run:
+   python main.py
 
-## Requirements
-
-- Python 3.8+
-- pygame
-
-Install pygame with pip:
-
-pip install -r requirements.txt
-
-## Running
-
-python main.py
-
-## Controls
-
+Controls
 - Arrow keys / WASD — Move Mamma
-- Space — Slap with rolling pin (has a cooldown)
+- Space — Slap with rolling pin
+- F — Shoot with gun (if you have gun powerup)
+- G — Throw grenade (if you have grenades)
 - R — Restart after game over
 - Esc — Quit
 
-## Gameplay
+Notes & next steps you might want
+- Replace the primitive drawings with real PNG sprites: the Mom and mafia draw functions have clear places where sprites can be drawn instead. Use pygame.image.load and blit with per-pixel alpha.
+- Add sounds: slap, punch, gunshot, grenade bounce/explosion. Use pygame.mixer.
+- Add animation frames or sprite sheet for walking & slap for extra polish.
+- Add more mafia types and attacks (throwing knives, shields).
+- Tweak balance: spawn rates, health, speeds.
 
-- Mafia spawn from the edges and move toward Mamma.
-- Slap them with your rolling pin to score points.
-- If a mafia reaches Mamma, you lose a life.
-- Game over when lives run out.
-
-## Ideas for improvements
-
-- Add images and sound effects (place them in an `assets/` folder and load with pygame.mixer).
-- Add different mafia types (faster, tougher).
-- Add power-ups (pizza power, temporary speed boost, area slap).
-- Add a high-score save file.
-
-
-Have fun! If you'd like, I can:
-- Add graphics or place-holder images,
-- Add sound effects and music hooks,
-- Turn this into a package with assets,
-- Add levels, boss mafia, or animations.
-
--   
-(Please contribute...)
+If you'd like, I can:
+- Add placeholder PNG sprites (I can include simple SVG-to-PNG conversions or programmatic placeholder images),
+- Add sound effect stubs and a small assets folder layout,
+- Create a settings/constants file to make tuning easier.
